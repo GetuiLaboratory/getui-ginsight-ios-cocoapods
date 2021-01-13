@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   # 名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
   s.name         = "GInsightSDK"
   # 版本号/库原代码的版本
-  s.version      = "1.4.7.0"
+  s.version      = "1.4.8.0"
   # 简介
   s.summary      = "个像 iOS SDK CocoaPods 集成库"
   # 项目主页地址
@@ -22,15 +22,15 @@ Pod::Spec.new do |s|
   # 项目的地址
   s.source       = { :git => "https://github.com/GetuiLaboratory/getui-ginsight-ios-cocoapods.git", :tag => "#{s.version}" }
   # 支持的平台及版本
-  s.platform     = :ios
-
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
   # iOS支持的pod最低版本 / iOS对应的版本
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
   # 需要包含的源文件
   s.source_files  = 'GInsightSDK.h'
+  # 依赖的第三方pod
+  s.dependency 'GTCommonSDK', '>=1.2.1.0'
   # 使用了第三方静态库
-  s.ios.vendored_libraries = 'libGTCommonSDK.a', 'libGInsightSDK.a'
+  s.ios.vendored_libraries = 'libGInsightSDK.a'
   # s.ios.vendored_frameworks = 'GeYanSdk.framework'
   # 所需的framework，多个用逗号隔开
   s.frameworks = 'AdSupport','SystemConfiguration','CoreTelephony','Security'
