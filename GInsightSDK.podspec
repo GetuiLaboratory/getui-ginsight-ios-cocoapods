@@ -33,11 +33,11 @@ Pod::Spec.new do |s|
   s.ios.vendored_libraries = 'libGTCommonSDK.a', 'libGInsightSDK.a'
   # s.ios.vendored_frameworks = 'GeYanSdk.framework'
   # 所需的framework，多个用逗号隔开
-  s.frameworks = 'AdSupport','SystemConfiguration','CoreTelephony','CoreLocation','CoreBluetooth','Security'
+  s.frameworks = 'AdSupport','SystemConfiguration','CoreTelephony','Security'
   # “弱引用”所需的framework，多个用逗号隔开
   # s.ios.weak_frameworks = 'WebKit'
   # 所需的library，多个用逗号隔开
-  s.libraries = "sqlite3.0","z",'c++'
+  s.libraries = "sqlite3.0","z",'c++','resolv'
   # 是否使用ARC，如果指定具体文件，则具体的问题使用ARC
   s.requires_arc = true
 
