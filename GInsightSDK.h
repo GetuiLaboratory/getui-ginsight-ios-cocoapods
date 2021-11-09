@@ -4,7 +4,7 @@
 //
 //  Created by j on 16/5/3.
 //  Copyright © 2016年 getui. All rights reserved.
-//  version:1.4.8.0
+//  version:1.5.0.0
 
 #import <Foundation/Foundation.h>
 
